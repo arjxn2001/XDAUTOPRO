@@ -3,7 +3,7 @@ import mustang from '../assets/mustang.png'
 import "../Styling/hero.css"
 import Home from '../Pages/Home'
 import { Link } from 'react-router-dom'
-
+// import Fortuner from "../assets/fortuner.png"
 
 const container = (delay) => ({
   hidden: {y: 100, opacity: 0},
@@ -27,7 +27,7 @@ const container1 = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className='w-full lg:h-184 h-200'>
+    <div className='w-full min-h-screen'>
     <motion.div
     initial={{ opacity: 1, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -45,7 +45,7 @@ const Hero = () => {
         animate="visible"
         className='car  lg:h-95 lg:w-230 h-45 w-95 md:w-150 md:h-60 ' src={mustang} alt="error" />
       </div>
-      <div className='description flex flex-col items-center lg:items-start lg:mt-10 mt-3'>
+      <div className='description flex flex-col items-center lg:items-start lg:mt-10 mt-0 '>
         <motion.h1 
         variants={container(.5)}
         initial="hidden"
@@ -61,10 +61,10 @@ const Hero = () => {
         variants={container(1.5)}
         initial="hidden"
         animate="visible"
-        className='  lg:mt-10 mt-5  lg:pe-25 lg:px-1 px-15 flex  text-justify lg:text-xl text:sm  lg:text-white text-black font-'>Driven by precision and powered by innovation, XD Auto Pro delivers elite car detailing like no other. From stealth-grade PPF to graphene coatings, custom mods, and luxury washes, we elevate every ride to its boldest form.</motion.p>
+        className='  lg:mt-10 mt-5  lg:pe-25 lg:px-1 px-14 flex  text-justify lg:text-xl text:sm  lg:text-white text-black font-'>Driven by precision and powered by innovation, XD Auto Pro delivers elite car detailing like no other. From stealth-grade PPF to graphene coatings, custom mods, and luxury washes, we elevate every ride to its boldest form.</motion.p>
         <motion.div
         
-          className='seeMore flex justify-center items-center lg:mt-10 lg:ms-3'>
+          className='flex justify-center items-center lg:mt-10  lg:ms-3'>
         <Link to="./xdautopro">
              <motion.button
              variants={container(1.8)}

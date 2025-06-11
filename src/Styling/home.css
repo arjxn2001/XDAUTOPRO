@@ -316,7 +316,7 @@
   .arrows {
     padding-inline: 40px;
     display: flex;
-    bottom: 250px;
+    bottom: 220px;
   }
 
   .carousel .list .item:nth-child(2) {
