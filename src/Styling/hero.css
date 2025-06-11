@@ -57,7 +57,7 @@ text-shadow: 3px 1px 8px rgba(0, 0, 0, 0.436);    margin-bottom: 70px;
 
 .heroButton {
         display: flex;
-        bottom: 35px;
+        bottom: 40px;
       --glow-color: rgb(209, 210, 210);
       --glow-spread-color: rgba(43, 41, 44, 0.781);
       --enhanced-glow-color: rgb(214, 214, 214);

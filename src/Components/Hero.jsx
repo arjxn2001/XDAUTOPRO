@@ -27,7 +27,7 @@ const container1 = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className='w-full min-h-screen'>
+    <div className='w-full min-h-screen '>
     <motion.div
     initial={{ opacity: 1, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -50,7 +50,7 @@ const Hero = () => {
         variants={container(.5)}
         initial="hidden"
         animate="visible"
-        className='lg:text-8xl md:text-6xl text-5xl  lg:mt-0 mt-15 tracking-tighter bg-gradient-to-r from-white to-gray-100 text-transparent bg-clip-text font-extrabold'>XD AUTO PRO</motion.h1>
+        className='lg:text-8xl md:text-6xl text-5xl  lg:mt-0 mt-13 tracking-tighter bg-gradient-to-r from-white to-gray-100 text-transparent bg-clip-text font-extrabold'>XD AUTO PRO</motion.h1>
         <motion.h3
         variants={container(1)}
         initial="hidden"
@@ -61,10 +61,10 @@ const Hero = () => {
         variants={container(1.5)}
         initial="hidden"
         animate="visible"
-        className='  lg:mt-10 mt-5  lg:pe-25 lg:px-1 px-14 flex  text-justify lg:text-xl text:sm  lg:text-white text-black font-'>Driven by precision and powered by innovation, XD Auto Pro delivers elite car detailing like no other. From stealth-grade PPF to graphene coatings, custom mods, and luxury washes, we elevate every ride to its boldest form.</motion.p>
+        className='  lg:mt-10 mt-5  lg:pe-25 lg:px-1 px-14 flex  text-justify lg:text-xl text:sm  lg:text-white text-black '>Driven by precision and powered by innovation, XD Auto Pro delivers elite car detailing like no other. From stealth-grade PPF to graphene coatings, custom mods, and luxury washes, we elevate every ride to its boldest form.</motion.p>
         <motion.div
         
-          className='flex justify-center items-center lg:mt-10  lg:ms-3'>
+          className='flex justify-center items-center lg:mt-20 mt-0  lg:ms-3'>
         <Link to="./xdautopro">
              <motion.button
              variants={container(1.8)}
