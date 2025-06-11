@@ -1,7 +1,7 @@
 import {  useState } from "react";
 import Fortuner from "../assets/fortuner.png";
-import Polo from "../assets/Volkswagen_Polo.png";
-import BMWX1 from "../assets/BMW_X1.png";
+import Polo from "../assets/VolkswagenPolo.png";
+import I20Fox from "../assets/I20.png";
 import Mustang from "../assets/mustang.png";
 import BMWM5 from "../assets/BMW_M5.png"
 import { motion } from "framer-motion";
@@ -17,30 +17,35 @@ const Home = () => {
             title: "BMW M5",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            url: "https://www.instagram.com/reel/DDw8tspyrpd/?igsh=N2h1NTdoeTdqcHAx",
         },
         {
             image: Fortuner,
             title: "FORTUNER",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            url:"https://www.instagram.com/reel/DKRD7Q7TTf3/?igsh=MXIzbHdkMmc5dGl5ZQ==",
         },
         {
             image: Polo,
             title: "VOLKSWAGEN POLO",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            url:"https://www.instagram.com/reel/DKRD7Q7TTf3/?igsh=MXIzbHdkMmc5dGl5ZQ==",
         },
         {
-            image: BMWX1,
-            title: "BMW X1",
+            image: I20Fox,
+            title: "Hyundai i20",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            url:"https://www.instagram.com/reel/C63fVLwvVkS/?igsh=MTF5cXNpZmpsY2VvMQ==",
         },
         {
             image: Mustang,
             title: "FORD MUSTANG",
             topic: "Modsss",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            url:"https://www.instagram.com/reel/DKTjozCzshk/?igsh=MW13cWo3Y3FpbzMxcg==",
         },
     ];
 
@@ -90,7 +95,10 @@ const Home = () => {
 
                 <div className="arrows">
                     <button id="prev" onClick={handlePrev}><FaArrowLeft /></button>
-                    <a href="">Watch Video</a>
+                    <a 
+                    href={carList[1].url}
+                    target="_blank"
+                    rel="noopener noreferrer">Watch Video</a>
                     <button id="next" onClick={handleNext}><FaArrowRight /></button>
                 </div>
             </div>
