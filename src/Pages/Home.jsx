@@ -98,7 +98,9 @@ const Home = () => {
                     <a 
                     href={carList[1].url}
                     target="_blank"
-                    rel="noopener noreferrer">Watch Video</a>
+                    rel="noopener noreferrer"
+                    className="hover:bg-gradient-to-r from-gray-600 via-white to-gray-600 hover:text-black "
+                    >Watch Video</a>
                     <button id="next" onClick={handleNext}><FaArrowRight /></button>
                 </div>
             </div>

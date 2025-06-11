@@ -36,6 +36,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  
 }
 
 .carousel .list .item .intro {
@@ -66,6 +67,7 @@
   filter: blur(0);
   z-index: 10;
   opacity: 1;
+  
 }
 
 .carousel .list .item:nth-child(1) {
@@ -111,7 +113,7 @@
 }
 
 .arrows a{
-    padding-inline: 15px;
+    padding-inline: 25px;
     border: 1px solid white;
     display: flex;
     justify-content: center;
@@ -119,6 +121,8 @@
     border-radius: 10px;
     font-size: 13px;
 }
+
+
 
 
 
@@ -297,12 +301,12 @@
   }
 
   .carousel .list .item .intro .title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .carousel .list .item .intro .topic {
-  font-size: .9rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-top: 0.2rem;
 }
