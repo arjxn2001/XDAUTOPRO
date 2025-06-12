@@ -77,7 +77,7 @@ const Home = () => {
     };
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center border-b ">
+        <section id="home" className="min-h-screen flex items-center justify-center">
             <div className="carousel">
                 <div className={`list ${slideDirection}`}>
                     {carList.map((car, index) => (
@@ -106,7 +106,7 @@ const Home = () => {
                 </div>
                  
             </div>
-           <div className="blurImg absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[790px] opacity-100 pointer-events-none z-0 ">
+           <div className="blurImg absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[790px] opacity-100 pointer-events-none z-0 h-55">
                 <img 
                     src={blurCar} 
                     alt="" 
