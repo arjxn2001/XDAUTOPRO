@@ -5,6 +5,7 @@ import I20Fox from "../assets/I20.png";
 import Mustang from "../assets/mustang.png";
 import BMWM5 from "../assets/BMW_M5.png"
 import { motion } from "framer-motion";
+import blurCar from "../assets/blurCar.png"
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../Styling/home.css";
@@ -76,7 +77,7 @@ const Home = () => {
     };
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center">
+        <section id="home" className="min-h-screen flex items-center justify-center border-b ">
             <div className="carousel">
                 <div className={`list ${slideDirection}`}>
                     {carList.map((car, index) => (
@@ -103,8 +104,18 @@ const Home = () => {
                     >Watch Video</a>
                     <button id="next" onClick={handleNext}><FaArrowRight /></button>
                 </div>
+                 
             </div>
+           <div className="blurImg absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[790px] opacity-100 pointer-events-none z-0 ">
+                <img 
+                    src={blurCar} 
+                    alt="" 
+                    className="w-full filter blur-md brightness-150 drop-shadow-[0_0_50px_rgba(255,0,0,0.5)]"
+                    />
+            </div>
+           
         </section>
+        
     );
 };
 
