@@ -298,13 +298,13 @@
   .carousel .list .item img {
     width: 80%;
     right: 10%;
-    margin-top: 110px;
+    top: 30%;
   }
 
   .carousel .list .item .intro {
     max-width: 90%;
     left: 5%;
-    top: 15%;
+    top: 10%;
     text-align: justify;
 
   }
@@ -410,7 +410,7 @@
 
 @media (max-width: 400px){
     .arrows{
-        bottom: 230px;
+        bottom: 150px;
     }
 }
 
