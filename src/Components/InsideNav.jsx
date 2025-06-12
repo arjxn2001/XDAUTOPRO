@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logo from '../assets/xd_automotive.png'
+import logo from '../assets/xd_automotive3.png'
 import { FaInstagram, FaMapMarkedAlt, FaWhatsapp } from 'react-icons/fa'
 
 const InsideNav = () => {
@@ -33,9 +33,9 @@ const InsideNav = () => {
   };
 
   return (
-    <nav className='flex justify-between lg:px-20 px-10 lg:text-lg text-xl fixed w-full  z-50 py-4'>
+    <nav className='flex justify-between lg:px-20 px-10 lg:text-lg text-xl fixed w-full z-50 py-4 backdrop-blur-md bg-white/0'>
       <div className='flex items-center'>
-        <img src={logo} alt="XD logo" className='w-25 h-25 lg:w-35 lg:h-35' />
+        <img src={logo} alt="XD logo" className='w-25 h-9 lg:w-35 lg:h-12' />
       </div>
 
         <ul className='flex lg:gap-20 gap-8 text-black text-xs sm:text-sm md:text-base lg:text-sm items-center'>

@@ -329,8 +329,13 @@
   .arrows {
     padding-inline: 40px;
     display: flex;
-    bottom: 220px;
+    bottom: 200px;
     
+  }
+
+  .arrows a{
+    background-color: rgba(87, 86, 86, 0.43);
+    border: 2px solid white;
   }
 
   .carousel .list .item:nth-child(2) {
@@ -402,4 +407,10 @@
 }
 }
 
+
+@media (max-width: 400px){
+    .arrows{
+        bottom: 230px;
+    }
+}
 
