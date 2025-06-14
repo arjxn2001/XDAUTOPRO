@@ -19,7 +19,7 @@ const Services = () => {
                     <img src={service1} alt="Service" width={600} className="border-3 border-neutral-400 rounded-3xl shadow-2xl shadow-black" />
                 </div>
             </div>
-            <div className='relative bottom-65 left-20 flex '>
+            <div className='relative lg:bottom-65 lg:left-20 flex flex-wrap mt-10 justify-center'>
                 
                     <Cards/><Cards/>
                 
