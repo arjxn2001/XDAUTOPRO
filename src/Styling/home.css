@@ -398,7 +398,6 @@
 }
 
 
-
 .bottomItem div{
     display: none;
 }
@@ -406,24 +405,127 @@
 
 }
 
-@media (max-width: 400px){
-    .arrows{
-       bottom: 130px;
-    }
-   
-}
 
 
-@media (max-width: 570px){
+
+@media (max-width: 430px){
+
     .bottomItem img{
     display: flex;
-}
-}
-
-
-@media (max-width: 400px){
-    .arrows{
-        bottom: 150px;
+    height: 160px;
+    margin-top: 50px;
     }
+
+    /* .arrows{
+       bottom: 220px;
+    } */
+
+
+    .carousel .list .item {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .carousel .list .item img {
+    width: 75%;
+    right: 10%;
+    top: 30%;
+  }
+
+  .carousel .list .item .intro {
+    max-width: 90%;
+    left: 5%;
+    top: 10%;
+    text-align: justify;
+
+  }
+
+  .carousel .list .item .intro .title {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
+
+.carousel .list .item .intro .topic {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.carousel .list .item .intro .des {
+  font-size: .7rem;
+  margin-top: 0.1rem;
+  line-height: 1.3;
+}
+.carousel .list .item .intro .work{
+    font-size: .7rem;
+    margin-top: 0.4rem;
+} 
+
+  .arrows {
+    padding-inline: 40px;
+    display: flex;
+    bottom: 140px;
+    
+  }
+
+  .arrows a{
+    background-color: rgba(87, 86, 86, 0.43);
+    border: 1.5px solid white;
+    font-size: 10px;
+    width: 130px;
+    height: 30px;
+    box-shadow: 0px 0px 10px 4px rgb(165, 162, 162);
+  }
+
+  .carousel .list .item:nth-child(2) {
+  transform: translate(0, 0);
+  filter: blur(0);
+  z-index: 10;
+  opacity: 1;
+}
+
+.carousel .list .item:nth-child(1) {
+  transform: translate(-50%, -5%) scale(1);
+  filter: blur(30px);
+  z-index: 11;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel .list .item:nth-child(3) {
+  transform: translate(40%, 12%) scale(0.7);
+  filter: blur(10px);
+  z-index: 9;
+  opacity: 1;
+}
+
+.carousel .list .item:nth-child(4) {
+  transform: translate(14%, 23%) scale(0.5);
+  filter: blur(30px);
+  z-index: 8;
+  opacity: 1;
+}
+
+.carousel .list .item:nth-child(5) {
+  transform: translate(-21%, 15%) scale(0.5);
+  filter: blur(40px);
+  z-index: 7;
+  opacity: 1;
+}
+
+#prev , #next{
+    border: 1.5px solid white; 
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 4px rgb(165, 162, 162);
+}
+#prev:hover , #next:hover{
+    background-color: white;
+    color: black;
+}
+
+}
+
+
 
