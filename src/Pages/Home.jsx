@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import {  useRef, useState } from "react";
 import Fortuner from "../assets/fortuner.png";
 import Polo from "../assets/VolkswagenPolo.png";
 import I20Fox from "../assets/I20.png";
@@ -7,8 +7,10 @@ import BMWM5 from "../assets/BMW_M5.png"
 import { motion } from "framer-motion";
 import blurCar from "../assets/blurCar.png"
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaChevronDown } from "react-icons/fa";
 import "../Styling/home.css";
+import { Link } from "react-router";
+import Gap from "../Components/Gap";
 
 const Home = () => {
 
@@ -18,6 +20,7 @@ const Home = () => {
             title: "BMW M5",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            work:"[ PPF ] [ Mod ] [ CC ]",
             url: "https://www.instagram.com/reel/DDw8tspyrpd/?igsh=N2h1NTdoeTdqcHAx",
         },
         {
@@ -25,13 +28,16 @@ const Home = () => {
             title: "FORTUNER",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            work:"[ PPF ] [ PWC ] [ CC ]",
             url:"https://www.instagram.com/reel/DKRD7Q7TTf3/?igsh=MXIzbHdkMmc5dGl5ZQ==",
+
         },
         {
             image: Polo,
             title: "VOLKSWAGEN POLO",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            work:"[ PPF ] [ CC ]",
             url:"https://www.instagram.com/reel/DKRD7Q7TTf3/?igsh=MXIzbHdkMmc5dGl5ZQ==",
         },
         {
@@ -39,6 +45,7 @@ const Home = () => {
             title: "Hyundai i20",
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            work:"[ PWC ] [ CC ] [ Mod ]",
             url:"https://www.instagram.com/reel/C63fVLwvVkS/?igsh=MTF5cXNpZmpsY2VvMQ==",
         },
         {
@@ -46,6 +53,7 @@ const Home = () => {
             title: "FORD MUSTANG",
             topic: "Modsss",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
+            work:"[ PWC ] [ Mod ]",
             url:"https://www.instagram.com/reel/DKTjozCzshk/?igsh=MW13cWo3Y3FpbzMxcg==",
         },
     ];
@@ -53,6 +61,8 @@ const Home = () => {
     const [carList, setCarList] = useState(cars);
     const [slideDirection, setSlideDirection] = useState("");
 
+
+    
     
 
 
@@ -76,6 +86,15 @@ const Home = () => {
         }, 300);
     };
 
+
+    const handleScroll = ()=>{
+        const element = document.getElementById('services');
+        if(element) {
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+
+
     return (
         <section id="home" className="min-h-screen flex items-center justify-center">
             <div className="carousel">
@@ -89,6 +108,7 @@ const Home = () => {
                             <div className="title bg-gradient-to-b from-black  to-red-500 text-transparent bg-clip-text">{car.title}</div>
                             <div className="topic">{car.topic}</div>
                             <div className="des">{car.description}</div>
+                            <div className="work">{car.work}</div>
                         </div>
                         </div>
                     ))}
@@ -106,13 +126,24 @@ const Home = () => {
                 </div>
                  
             </div>
-           <div className="blurImg absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[790px] opacity-100 pointer-events-none z-0 h-55">
+           <div className="bottomItem absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[790px] opacity-100 pointer-events-none z-0 h-55">
+
+                    <div onClick={handleScroll} className="flex justify-center items-center lg:mt-25 flex-col ">
+                        <FaChevronDown className="text-neutral-400 animate-bounce text-xl mt-1 "/>
+                        <FaChevronDown className="text-neutral-300 animate-bounce text-2xl mt-1"/>
+                        <FaChevronDown className="text-white animate-bounce  text-3xl  mt-1"/>
+                    </div>
+           
                 <img 
                     src={blurCar} 
                     alt="" 
                     className="w-full filter blur-md brightness-150 drop-shadow-[0_0_50px_rgba(255,0,0,0.5)]"
                     />
+
+                    
+                
             </div>
+
            
         </section>
         

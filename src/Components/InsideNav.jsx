@@ -8,7 +8,7 @@ const InsideNav = () => {
   // Scroll handler to update active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "works", "contact"];
+      const sections = ["home", "services", "contact"];
       const scrollY = window.scrollY + 100; // Add offset for navbar
 
       for (let id of sections) {
@@ -39,7 +39,7 @@ const InsideNav = () => {
       </div>
 
         <ul className='flex lg:gap-20 gap-8 text-black text-xs sm:text-sm md:text-base lg:text-sm items-center'>
-                {["home", "works", "contact"].map((id) => (
+                {["home", "services", "contact"].map((id) => (
                     <li
                     key={id}
                     onClick={() => handleClick(id)}
