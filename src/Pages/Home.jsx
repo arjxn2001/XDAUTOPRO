@@ -1,15 +1,13 @@
-import {  useRef, useState } from "react";
+import {  useState } from "react";
 import Fortuner from "../assets/fortuner.png";
 import Polo from "../assets/VolkswagenPolo.png";
 import I20Fox from "../assets/I20.png";
 import Mustang from "../assets/mustang.png";
 import BMWM5 from "../assets/BMW_M5.png"
-import { motion } from "framer-motion";
-import blurCar from "../assets/blurCar.png"
 
 import { FaArrowLeft, FaArrowRight, FaChevronDown } from "react-icons/fa";
 import "../Styling/home.css";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import Gap from "../Components/Gap";
 
 const Home = () => {
@@ -87,32 +85,29 @@ const Home = () => {
     };
 
 
-    const handleScroll = ()=>{
-        const element = document.getElementById('services');
-        if(element) {
-            element.scrollIntoView({behavior: 'smooth'})
-        }
-    }
+
 
 
     return (
+
         <section id="home" className="min-h-screen flex items-center justify-center">
-            <div className="carousel">
-                <div className={`list ${slideDirection}`}>
+            
+            <div className="carousel min-h-screen">
+                <div className={`list ${slideDirection} `}>
                     {carList.map((car, index) => (
                         <div className={`item ${index === 1 ? 'active' : ''}`} key={`${car.title}-${index}`}>
 
-                        <img
-                        src={car.image} alt={`Car-${index}`} />
-                        <div className={`intro `}>
-                            <div className="title bg-gradient-to-b from-black  to-red-500 text-transparent bg-clip-text">{car.title}</div>
+                        <img src={car.image} alt={`Car-${index}`} />
+
+                        <div className={`introduce`}>
+                            <div className="title text-transparent bg-clip-content">{car.title}</div>
                             <div className="topic">{car.topic}</div>
                             <div className="des">{car.description}</div>
                             <div className="work">{car.work}</div>
                         </div>
-                        </div>
-                    ))}
                     </div>
+                    ))}
+                </div>
 
                 <div className="arrows">
                     <button id="prev" onClick={handlePrev}><FaArrowLeft /></button>
@@ -120,29 +115,30 @@ const Home = () => {
                     href={carList[1].url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:bg-gradient-to-r from-gray-600 via-white to-gray-600 hover:text-black font-bold"
+                    className="hover:bg-gradient-to-r from-gray-600 via-neutral-300 to-gray-600 hover:text-black font-bold"
                     >Watch Video</a>
-                    <button id="next" onClick={handleNext}><FaArrowRight /></button>
+                    <button  id="next" onClick={handleNext}><FaArrowRight /></button>
                 </div>
-                 
-            </div>
-           <div className="bottomItem absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[790px] opacity-100 pointer-events-none z-0 h-55">
 
-                    <div onClick={handleScroll} className="flex justify-center items-center lg:mt-25 flex-col ">
-                        <FaChevronDown className="text-neutral-400 animate-bounce text-xl mt-1 "/>
-                        <FaChevronDown className="text-neutral-300 animate-bounce text-2xl mt-1"/>
-                        <FaChevronDown className="text-white animate-bounce  text-3xl  mt-1"/>
-                    </div>
-           
-                <img 
-                    src={blurCar} 
-                    alt="" 
-                    className="w-full filter blur-md brightness-150 drop-shadow-[0_0_50px_rgba(255,0,0,0.5)]"
-                    />
 
-                    
+
+                </div>
+
+                <div className="bottomItem absolute  left-1/2 -translate-x-1/2 w-full   pointer-events-none z-0 ">
+
+                <div className="flex justify-center items-center lg:mt-10 flex-col goDown">
+                    <FaChevronDown className="text-neutral-400 animate-bounce text-sm  "/>
+                    <FaChevronDown className="text-neutral-300 animate-bounce text-lg "/>
+                    <FaChevronDown className="text-white animate-bounce  text-2xl  "/>
+                </div>
+ 
                 
-            </div>
+                </div>
+
+
+
+
+           
 
            
         </section>
@@ -151,3 +147,11 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+

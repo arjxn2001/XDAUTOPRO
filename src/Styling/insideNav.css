@@ -1,0 +1,18 @@
+@media (max-width: 430px){
+    .ulItem li{
+        font-size: 10px;
+    }
+    .navLogo{
+        width: 70px;
+        height: 35px;
+        
+        
+    }
+}
+
+
+@media (max-width: 768px){
+    .ulItem li{
+        font-size: 15px;
+    }
+}

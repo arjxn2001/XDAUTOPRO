@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import logo from '../assets/xd_automotive3.png'
 import { FaInstagram, FaMapMarkedAlt, FaWhatsapp } from 'react-icons/fa'
+import "../Styling/insideNav.css"
+
+
 
 const InsideNav = () => {
   const [active, setActive] = useState("home");
@@ -33,12 +36,12 @@ const InsideNav = () => {
   };
 
   return (
-    <nav className='flex justify-between lg:px-20 px-10 lg:text-lg text-xl fixed w-full z-50 py-4 backdrop-blur-md bg-white/0'>
+    <nav className='flex justify-between lg:px-20 md:px-10 px-4  fixed w-full z-50 lg:py-2 md:py-2 py-1 backdrop-blur-md bg-white/0'>
       <div className='flex items-center'>
-        <img src={logo} alt="XD logo" className='w-25 h-9 lg:w-35 lg:h-12' />
+        <img src={logo} alt="XD logo" className='navLogo w-30 h-10' />
       </div>
 
-        <ul className='flex lg:gap-20 gap-8 text-black text-xs sm:text-sm md:text-base lg:text-sm items-center'>
+        <ul className='ulItem flex lg:gap-20 md:gap-13 gap-6 text-black  text-xs items-center'>
                 {["home", "services", "contact"].map((id) => (
                     <li
                     key={id}
@@ -52,7 +55,7 @@ const InsideNav = () => {
                 ))}
         </ul>
 
-      <div className='hidden lg:flex items-center lg:gap-17 text-black lg:text-3xl text-xl'>
+      <div className='hidden lg:flex items-center lg:gap-17 text-black lg:text-md text-xl'>
         <a href="#" title="Instagram"><FaInstagram /></a>
         <a href="#" title="Map"><FaMapMarkedAlt /></a>
         <a href="#" title="WhatsApp"><FaWhatsapp /></a>

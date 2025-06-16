@@ -2,10 +2,12 @@ import React from 'react'
 import "../Styling/services.css"
 import service1 from "../assets/serviceImages/service1.jpg"
 import Cards from '../Components/Cards';
+import Gap from '../Components/Gap';
 const Services = () => {
 
     return(
-        <section  className="relative min-h-screen w-full lg:mt-20 mt-22 ">
+        <section  className="relative min-h-screen w-full lg:mt-20 mt-22 " id="services">
+            <Gap/>
             {/* Background Layer */}
             <div className="background absolute inset-0 blur z-0"></div>
 
