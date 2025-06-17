@@ -11,8 +11,8 @@ import React from 'react'
 
 const Gap = () => {
   return (
-    <div className='lg:mt-25  ' >
-      <hr  className='lg:ms-25 ms-5 w-50 hid'/>
+    <div className='lg:mt-25  mt-10' >
+      <hr  className='lg:ms-25 ms-5 w-50   md:mb-10 lg:mb-20 mb-13'/>
 
 
 

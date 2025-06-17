@@ -335,6 +335,14 @@
     .carousel.showDetail .list .item:nth-child(2) .detail .title{
         font-size: 2em;
     }
+
+    .arrows{
+        margin-bottom: 20%;
+        padding-inline: 10%;
+    }
+    .bottomItem{
+        margin-bottom: 5%;
+    }
 }
 
 

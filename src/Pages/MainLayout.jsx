@@ -10,7 +10,6 @@ const MainLayout = () => {
     <>
       <InsideNav />
       <Home />
-      <Gap/>
       <Services/>
       <Contact />
     </>
