@@ -4,6 +4,7 @@
   position: relative;
   border-radius: 1.5rem;
   overflow: hidden;
+  box-shadow: 0 0 8px black;
 }
 
 
@@ -226,7 +227,7 @@
 
   .cardArticle,
   .cardImg {
-    border-radius: 3rem;
+    border-radius: 2rem;
     
   }
 

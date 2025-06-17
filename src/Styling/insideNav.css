@@ -1,10 +1,12 @@
 @media (max-width: 430px){
+    
     .ulItem li{
-        font-size: 10px;
+        font-size: 8px;
     }
     .navLogo{
         width: 70px;
         height: 35px;
+        padding: 3px;
         
         
     }
