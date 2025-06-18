@@ -5,6 +5,7 @@ import Cards from '../Components/Cards';
 import Gap from '../Components/Gap';
 import VideoPage from '../Components/VideoPage';
 import { motion } from 'framer-motion';
+import VideoPageLg from '../Components/VideoPageLg';
 
 
 const Services = () => {
@@ -17,12 +18,12 @@ const Services = () => {
 
             {/* Content Layer */}
             <div className="relative z-10 lg:mt-25  flex flex-wrap  px-4">
-                <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-6 lg:mb-0  flex-col lg:px-20 px-2">
+                <div className="w-full lg:w-1/2 md:w-1/2 flex justify-center lg:justify-start mb-6 lg:mb-0  flex-col lg:px-20 px-2">
                     <motion.h1 
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 1 }}
-                    className="lg:text-4xl font-bold md:text-4xl text-3xl w-full tracking-tighter heading">KNOW THE <span className='bg-gradient-to-b from-black to-red-500 text-transparent bg-clip-text '>DIFFERENCE</span></motion.h1>
+                    className="lg:text-5xl font-bold md:text-4xl text-3xl w-full tracking-tighter heading">KNOW THE <span className='bg-gradient-to-b from-black to-red-500 text-transparent bg-clip-text '>DIFFERENCE</span></motion.h1>
                     <motion.h2
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
@@ -31,12 +32,12 @@ const Services = () => {
                     </motion.h2>
                    
                 </div>
-                <div className="w-full lg:w-1/2 flex justify-center  ">
+                <div className="w-full lg:w-1/2 md:w-1/2 flex justify-center  ">
                     <motion.img
                      whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 0.5 }}
-                    src={service1} alt="Service" width={300}  className="border-3 border-neutral-400 rounded-3xl shadow-2xl shadow-black h-45 " />
+                    src={service1} alt="Service" width={350}  className="border-3 border-neutral-400 rounded-3xl shadow-2xl shadow-black lg:h-50 " />
                 </div>
             </div>
             <motion.div
@@ -50,8 +51,9 @@ const Services = () => {
    
             </motion.div>
 
-            <div className='videoBg relative bottom-15'>
+            <div className='videoBg relative bottom-15 '>
                 <VideoPage/>
+                <VideoPageLg/>
             </div>
         </section>
     )

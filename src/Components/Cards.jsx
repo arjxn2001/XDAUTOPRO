@@ -8,6 +8,7 @@ import { CiMenuFries } from 'react-icons/ci'
 import "../Styling/cards.css"
 import { FaInstagram } from "react-icons/fa";
 import { motion } from 'framer-motion'
+import { MdOutlineReadMore } from 'react-icons/md'
 
 
 
@@ -31,7 +32,7 @@ const Cards = () => {
             </div>
 
             <div className="cardClip absolute">
-                <CiMenuFries />
+                <MdOutlineReadMore />
             </div>
 
             <div className="info">
@@ -65,7 +66,7 @@ const Cards = () => {
             </div>
 
             <div className="cardClip absolute">
-                <CiMenuFries />
+                <MdOutlineReadMore />
             </div>
 
             <div className="info">
@@ -99,7 +100,7 @@ const Cards = () => {
             </div>
 
             <div className="cardClip absolute ">
-                <CiMenuFries />
+                <MdOutlineReadMore />
             </div>
 
             <div className="info">
@@ -133,7 +134,7 @@ const Cards = () => {
             </div>
 
             <div className="cardClip absolute">
-                <CiMenuFries />
+                <MdOutlineReadMore />
             </div>
 
             <div className="info">
@@ -167,7 +168,7 @@ const Cards = () => {
             </div>
 
             <div className="cardClip absolute">
-                <CiMenuFries />
+                <MdOutlineReadMore />
             </div>
 
             <div className="info">

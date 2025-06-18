@@ -14,3 +14,9 @@
 .videoBg{
   display: flex;
 }
+
+@media (min-width:1024px) {
+  .videoBg{
+    bottom: 350px;
+  }
+}

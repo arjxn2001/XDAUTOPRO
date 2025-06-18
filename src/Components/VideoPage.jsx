@@ -4,7 +4,7 @@ import "../Styling/videoPage.css"
 
 const VideoPage = () => {
   return (
-    <div className='main lg:hidden w-full min-h-screen relative overflow-hidden'>
+    <div className='mainVideo md:hidden lg:hidden w-full min-h-screen relative overflow-hidden'>
       
       {/* Background video */}
       <video

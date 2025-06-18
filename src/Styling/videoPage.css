@@ -1,4 +1,4 @@
-.main {
+.mainVideo {
   position: relative;
   overflow: hidden;
   box-shadow: 0px 0px 12px black;
@@ -14,11 +14,19 @@
 
 /* Dark transparent overlay */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.605);
+  background-color: rgba(0, 0, 0, 0.69);
   
 }
 
 /* Gradient fade at top & bottom */
+
+@media (max-width:500px){
+    .overlay {
+  background-color: rgba(0, 0, 0, 0.605);
+  
+}
+}
+
 .video-fade {
   background: linear-gradient(to bottom,
     rgb(0, 0, 0) 0%,         /* fade in at top */
@@ -26,4 +34,11 @@
     rgba(0, 0, 0, 0) 85%,        
     rgba(0, 0, 0, 1) 100%);      /* fade out at bottom */
   pointer-events: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .video-bg{
+    height: 500px;
+  }
 }

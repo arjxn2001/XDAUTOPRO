@@ -51,12 +51,12 @@
   right: 1rem;
   background-color: yellow;
   box-shadow: 0 0 16px 4px hsl(52, 90%, 50%);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: black;
   z-index: 5;
   cursor: pointer;
