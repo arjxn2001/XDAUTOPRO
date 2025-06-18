@@ -54,19 +54,19 @@ const Hero = () => {
         variants={container1(.5)}
         initial="hidden"
         animate="visible"
-        className='car  lg:h-65 lg:w-150 h-35 w-75 md:w-120 md:h-50 lg:mt-1 mt-6' src={mustang} alt="error" />
+        className='car  lg:h-65 lg:w-150 h-40 w-85 md:w-120 md:h-50 lg:mt-1 mt-6' src={mustang} alt="error" />
       </div>
       <div className='description flex flex-col items-center lg:items-start lg:mt-10 mt-0 '>
         <motion.h1 
         variants={container(.5)}
         initial="hidden"
         animate="visible"
-        className='lg:text-7xl md:text-6xl text-4xl  lg:mt-0 mt-13 tracking-tighter bg-gradient-to-r from-white to-gray-100 text-transparent bg-clip-text font-extrabold'>XD AUTO PRO</motion.h1>
+        className='lg:text-7xl md:text-6xl text-5xl  lg:mt-0 mt-13 tracking-tighter bg-gradient-to-r from-white to-gray-100 text-transparent bg-clip-text font-extrabold'>XD AUTO PRO</motion.h1>
         <motion.h3
         variants={container(1)}
         initial="hidden"
         animate="visible"
-        className='lg:text-5xl md:text-4xl text-3xl font- tracking-tighter  lg:mt-8  mt-5 lg:text-white text-black font-medium'>Vehicle Detailing Service</motion.h3>
+        className='lg:text-5xl md:text-4xl text-3xl  tracking-tighter  lg:mt-8  mt-5 lg:text-white text-black font-bold'>Vehicle Detailing Service</motion.h3>
     
         <motion.p
         variants={container(1.5)}

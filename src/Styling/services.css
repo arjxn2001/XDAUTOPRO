@@ -11,3 +11,6 @@
   text-shadow: 1px 0px 8px black ;
 }
 
+.videoBg{
+  display: flex;
+}

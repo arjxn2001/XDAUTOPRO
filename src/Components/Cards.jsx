@@ -4,18 +4,24 @@ import service3 from "../assets/serviceImages/service3.jpg"
 import service4 from "../assets/serviceImages/service4.jpg"
 import service5 from "../assets/serviceImages/service5.jpg"
 import service6 from "../assets/serviceImages/service6.jpg"
-
-
 import { CiMenuFries } from 'react-icons/ci'
 import "../Styling/cards.css"
 import { FaInstagram } from "react-icons/fa";
+import { motion } from 'framer-motion'
+
+
+
 
 const Cards = () => {
   return (
     <section className='card w-full'>
 
       <div className="cardContainer container flex flex-wrap w-full ">
-        <div className="cardArticle ">
+        <motion.div
+         whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1 }}
+        className="cardArticle ">
             <img src={service2} alt="service2 img" className='cardImg rounded-3xl blur-xs' />
             <div className="cardShadow absolute top-0 left-0 w-full min-h-screen "></div>
 
@@ -43,9 +49,13 @@ const Cards = () => {
 
                 
             </div>
-        </div>
+        </motion.div>
 
-        <div className="cardArticle ">
+        <motion.div
+         whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+        className="cardArticle ">
             <img src={service3} alt="service2 img" className='cardImg rounded-3xl blur-xs' />
             <div className="cardShadow absolute top-0 left-0 w-full h-full "></div>
 
@@ -73,9 +83,13 @@ const Cards = () => {
 
                 
             </div>
-        </div>
+        </motion.div>
 
-        <div className="cardArticle ">
+        <motion.div
+         whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1 }}
+        className="cardArticle ">
             <img src={service4} alt="service2 img" className='cardImg rounded-3xl blur-xs' />
             <div className="cardShadow absolute top-0 left-0 w-full h-full "></div>
 
@@ -84,7 +98,7 @@ const Cards = () => {
                 <span className="cardProfession">₹xxxx - ₹xxxx</span>
             </div>
 
-            <div className="cardClip absolute">
+            <div className="cardClip absolute ">
                 <CiMenuFries />
             </div>
 
@@ -103,9 +117,13 @@ const Cards = () => {
 
                 
             </div>
-        </div>
+        </motion.div>
 
-        <div className="cardArticle ">
+        <motion.div
+         whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+        className="cardArticle ">
             <img src={service5} alt="service2 img" className='cardImg rounded-3xl blur-xs' />
             <div className="cardShadow absolute top-0 left-0 w-full h-full "></div>
 
@@ -133,9 +151,13 @@ const Cards = () => {
 
                 
             </div>
-        </div>
+        </motion.div>
 
-        <div className="cardArticle ">
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        className="cardArticle ">
             <img src={service6} alt="service2 img" className='cardImg rounded-3xl blur-xs' />
             <div className="cardShadow absolute top-0 left-0 w-full h-full "></div>
 
@@ -163,7 +185,7 @@ const Cards = () => {
 
                 
             </div>
-        </div>
+        </motion.div>
 
 
       </div>

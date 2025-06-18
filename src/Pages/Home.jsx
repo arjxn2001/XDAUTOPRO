@@ -36,7 +36,7 @@ const Home = () => {
             topic: "Mods",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore voluptate iusto libero illum eveniet magni natus blanditiis.",
             work:"[ PPF ] [ CC ]",
-            url:"https://www.instagram.com/reel/DKRD7Q7TTf3/?igsh=MXIzbHdkMmc5dGl5ZQ==",
+            url:"https://www.instagram.com/reel/DBWW_uESyAZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         },
         {
             image: I20Fox,

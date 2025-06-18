@@ -82,7 +82,7 @@
 .carousel .list .item .introduce .title{
     font-size: 2.3em;
     font-weight: bolder;
-    line-height: 1em;
+    line-height: 1.5em;
     background: linear-gradient(to bottom, black, #c80f0f); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -272,14 +272,14 @@
 }
 
 .arrows a{
-    border: 1px solid white;
+    border: 1.5px solid rgb(224, 223, 223);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
     font-size: 12px;
     border-radius: 20%;
-    box-shadow: 0px 0px 10px 4px rgb(165, 162, 162);
+    box-shadow: 0px 0px 10px 4px rgb(70, 70, 70);
 
 }
 
@@ -289,18 +289,23 @@
     height: 40px;
     border-radius: 50%;
     font-family: monospace;
-    border: 1px solid white;
+    border: 1.5px solid rgb(224, 223, 223);
     font-size: large;
     bottom: 20%;
     left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px 4px rgb(165, 162, 162);
+    box-shadow: 0px 0px 10px 4px rgb(70, 70, 70);
 }
 #next{
     left: unset;
     right: 10%;
+}
+
+#prev:hover,
+#next:hover{
+    background-color: rgb(112, 111, 111);
 }
 
 .carousel::before{
@@ -361,12 +366,12 @@
     }
     .carousel .list .item:nth-child(2) .introduce{
         width: 90%;
-        top: 28%;
+        top: 26%;
     }
     
     .carousel .list .item .introduce .title{
-    font-size: 2em;
-    font-weight: bolder;
+    font-size: 2.2em;
+    font-weight: 900;
     line-height: 1em;
     background: linear-gradient(to bottom, black, #c80f0f); 
     -webkit-background-clip: text;
@@ -378,7 +383,7 @@
   font-size: 1.3rem;
   font-weight: 800;
   margin-top: 10px;
-    background: linear-gradient(to bottom, black, #4e4c4c); 
+    background: linear-gradient(to bottom, black, #333232); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; 
@@ -389,14 +394,14 @@
   margin-top: .5rem;
   line-height: 1.4;
   color: black;
-  width: 80%;
+  width: 90%;
 }
 
 .carousel .list .item .introduce .work {
   font-size: .8rem;
   font-weight: 500;
-  margin-top: -.5rem;
-  line-height: 1.4;
+  margin-top: -.8rem;
+  line-height: 1.1;
   color: #5d0202;
 }
 
@@ -404,7 +409,7 @@
     .carousel .list .item img{
         width: 90%;
         left: 0;
-        margin-top: 14px;
+        margin-top: 25px;
 
     }
     /* .carousel.showDetail .list .item:nth-child(2) .detail{
@@ -418,7 +423,7 @@
     }
     
     .arrows{
-        bottom: 16%;
+        bottom: 13%;
         padding-inline: 12%;
     }
 

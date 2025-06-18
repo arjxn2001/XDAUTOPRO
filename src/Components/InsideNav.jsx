@@ -41,7 +41,7 @@ const InsideNav = () => {
         <img src={logo} alt="XD logo" className='navLogo w-30 h-10' />
       </div>
 
-        <ul className='ulItem flex lg:gap-20 md:gap-13 gap-6 text-black   items-center  '>
+        <ul className='ulItem flex lg:gap-20 md:gap-13 gap-6 text-black text-xs    items-center  '>
                 {["home", "services", "contact"].map((id) => (
                     <li
                     key={id}
